@@ -1,6 +1,6 @@
 ^^ self.layout(
     "Captcha | RT Discord Bot", "他にはないような機能を提供している多機能Bot。",
-    f"""
+    (f"""
     <h1 class="title">ウェブ認証 / Web Captcha</h1>
     <form action="{redirect_url}?data={session}" method="POST">
         {self.l(ja="ロボットではないことを証明しましょう！", en="Let's prove we're not robots!", tag="p")}
@@ -9,7 +9,7 @@
         <input type="submit" value="Submit ｜ 送信" />
     </form>
     <br /><br /><br />
-    """, """
+    """,), """
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/vs2015.min.css">
     <script src="https://js.hcaptcha.com/1/api.js" async defer></script>"""
